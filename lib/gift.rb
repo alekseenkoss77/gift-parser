@@ -1,8 +1,11 @@
 require 'treetop'
-require File.expand_path('../gift_parser.rb', __FILE__)
+require 'gift_parser/gift_parser'
+require 'gift_parser/railtie'
+require 'gift_parser/version'
 
-module Gift
-  
+module Gift  
+  require 'gift_parser/railtie' if defined?(Rails)
+
   class Gift
     
     attr_accessor :root
@@ -95,18 +98,14 @@ module Gift
   #     Write 2000 words on parser generators{}
   # 
   # Answer format: none.
-  class EssayQuestion < Question
-    
-  end
+  class EssayQuestion < Question; end
   
   # Purely a description or informative phrase.
   # Gift example:
   #      This is a description only
   #
   # Answer format: none
-  class DescriptionQuestion < Question
-  
-  end
+  class DescriptionQuestion < Question; end
 
   # A question with a true or false boolean answer
   # Gift examples:
