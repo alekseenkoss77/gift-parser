@@ -1,4 +1,4 @@
-== INFO
+# INFO
 A Ruby parser for the GIFT question format.
 
 GIFT is the format used by Moodle Learning Management System for writing multiple-choice, 
@@ -18,13 +18,13 @@ See the tests to get an idea on how the parser is supposed to be used.
 
 See the file LICENCE for copyright details. (MIT license.)
 
-==== Authors
+#### Authors
 
 Original Author:
 https://github.com/stuart/gift-parser 
 Stuart Coyle 2010
 
-== Usage
+## Usage
 
 In this gem you can see two main classes:
 1) Gift - it's a main class, whitch take an argument with GIFT string or file
@@ -77,7 +77,7 @@ question.markup_language
 
 ```
 
-=== Formats of answers
+### Formats of answers
 
 ```ruby
 
@@ -117,3 +117,11 @@ question.markup_language
 ]
 
 ```
+
+## Contributing
+
+1. Fork it ( https://github.com/[my-github-username]/gift-parser/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
